@@ -83,14 +83,14 @@ const LandingPage = () => (
           </div>
 
           <p className="text-lg text-ink-muted max-w-[400px] font-medium mb-12 leading-relaxed">
-            拒绝无效自嗨，一切动作以【转化】为导向。为您构建“精准定位+商业闭环”的增长体系。
+            从商业定位到手把手陪跑，为你的短视频变现提供全链路的解决方案。
           </p>
           
           <div className="flex flex-col md:flex-row items-center gap-10 mt-12">
-            <button className="cta-gradient text-white px-14 py-5 rounded-full font-bold text-[18px] shadow-[0_10px_25px_rgba(255,182,193,0.4)] hover:scale-105 transition-all cursor-pointer">
-              深度诊断业务
+            <button className="cta-gradient text-white px-8 sm:px-14 py-5 rounded-full font-bold text-[16px] sm:text-[18px] shadow-[0_10px_25px_rgba(255,182,193,0.4)] hover:scale-105 transition-all cursor-pointer whitespace-nowrap">
+              开启你的变现之旅
             </button>
-            <div className="flex gap-6 text-[13px] font-bold text-zinc-400 uppercase tracking-widest leading-none">
+            <div className="flex flex-row gap-4 sm:gap-6 text-[12px] sm:text-[13px] font-bold text-zinc-400 uppercase tracking-widest leading-none whitespace-nowrap">
               <span>● 精准定位</span>
               <span>● 商业闭环</span>
             </div>
@@ -100,6 +100,10 @@ const LandingPage = () => (
 
       {/* Right Side: Grid & Stack */}
       <div className="relative flex flex-col gap-12 md:gap-10">
+        <div className="mb-2 text-center lg:text-left">
+          <div className="text-xl md:text-2xl font-black text-ink-dark">身份照镜子</div>
+          <div className="text-[12px] font-bold text-zinc-400 mt-1">(做短视频中你属于哪一类人群)</div>
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-5 relative z-10">
           <ModuleCard number="01" icon={UserRoundCheck} title="实体老板/小白" description="从零到一建立短视频思维，摆脱局外人身份。" />
           <ModuleCard number="02" icon={Workflow} title="瓶颈期创作者" description="解决流量玄学、涨粉不现问题，打通变现路径。" delay={0.1} />
@@ -119,8 +123,8 @@ const LandingPage = () => (
         <div>
           <div className="text-[14px] font-bold text-brand-pink uppercase tracking-[2px] mb-6">Audience Analysis</div>
           <h2 className="text-5xl md:text-[64px] font-display font-[800] tracking-[-0.04em] leading-[1.1] mb-10">
-            痛点直击与 <br />
-            <span className="pink-underline">人群画像</span>
+            核心服务与 <br />
+            <span className="pink-underline">产品矩阵</span>
           </h2>
           <p className="text-ink-muted font-medium text-lg max-w-[420px] leading-relaxed mb-12">
             破局的核心：不是盲目发视频，而是“精准定位+商业闭环”，让每一条内容都承载变现价值。
@@ -165,10 +169,10 @@ const LandingPage = () => (
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10 mb-24">
-        <ModuleCard number="01" icon={ShieldCheck} title="深度定位诊断" description="账号诊断+1V1策略沟通，彻底分析提出目前卡点。" className="bg-white border-zinc-100" />
-        <ModuleCard number="02" icon={Rocket} title="爆款内容赋能" description="套餐一：纯文案输出，解决内容卡壳，分析账号问题。" delay={0.1} className="bg-zinc-50 border-zinc-200" />
-        <ModuleCard number="03" icon={Workflow} title="全案深度陪跑" description="套餐二：文案策划+后期剪辑，系统解决您的运营疑虑。" delay={0.2} className="bg-white border-zinc-100" />
-        <ModuleCard number="04" icon={Users} title="商业变现闭环" description="套餐三：线下实地拍摄，手把手带跑达成商业闭环。" delay={0.3} className="bg-zinc-50 border-zinc-200" />
+        <ModuleCard number="01" icon={ShieldCheck} title="深度定位诊断" description="适合思路混乱需要方向的创作者。1V1深度沟通，分析优势并拿走可执行的定位指南。¥800/次。" className="bg-white border-zinc-100" />
+        <ModuleCard number="02" icon={Rocket} title="文案陪跑(轻量型)" description="15条定制化爆款文案。适合有拍摄剪辑能力，但缺乏网感和爆款逻辑的进阶创作者。" delay={0.1} className="bg-zinc-50 border-zinc-200" />
+        <ModuleCard number="03" icon={Workflow} title="文案+剪辑全包" description="15条定制文案+15条成片精剪。适合能出镜但搞不定后期视觉呈现，追求省心交付的用户。" delay={0.2} className="bg-white border-zinc-100" />
+        <ModuleCard number="04" icon={Users} title="下店尊享版全案" description="线下实地导摄+3条标杆成片。适合零基础实体商家或需要高品质展现的“有钱没闲”型老板。" delay={0.3} className="bg-zinc-50 border-zinc-200" />
       </div>
 
       <div className="flex items-center justify-between pt-10 border-t border-border-subtle">
