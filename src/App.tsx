@@ -4,11 +4,14 @@ import {
   Rocket, 
   Workflow, 
   Users, 
-  BarChart3, 
   CheckCircle2, 
   ShieldCheck, 
-  UserRoundCheck,
-  ArrowLeft
+  ArrowLeft,
+  Lightbulb,
+  TrendingUp,
+  Clock9,
+  Zap,
+  BarChart3
 } from 'lucide-react';
 import { HandDrawnUnderline } from './components/HandDrawnUnderline';
 import { ModuleCard } from './components/ModuleCard';
@@ -105,10 +108,10 @@ const LandingPage = () => (
           <div className="text-[12px] font-bold text-zinc-400 mt-1">(做短视频中你属于哪一类人群)</div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-5 relative z-10">
-          <ModuleCard number="01" icon={UserRoundCheck} title="实体老板/小白" description="从零到一建立短视频思维，摆脱局外人身份。" />
-          <ModuleCard number="02" icon={Workflow} title="瓶颈期创作者" description="解决流量玄学、涨粉不现问题，打通变现路径。" delay={0.1} />
-          <ModuleCard number="03" icon={BarChart3} title="甩手掌柜型" description="由于没时间拍或没团队，提供全托管式内容交付。" delay={0.2} />
-          <ModuleCard number="04" icon={Rocket} title="迷失型转型者" description="针对流量下滑、变现困难的账号进行深度激活。" delay={0.3} />
+          <ModuleCard number="01" icon={Lightbulb} title="实体老板/小白" description="助力解决：起号没思路。带你快速建立商业思维，摆脱“局外人”尴尬。" />
+          <ModuleCard number="02" icon={TrendingUp} title="瓶颈期创作者" description="助力解决：流量不值钱。破解“只涨粉不搞钱”困局，打通高效变现路径。" delay={0.1} />
+          <ModuleCard number="03" icon={Clock9} title="甩手掌柜型" description="助力解决：没时间创作。提供全托管内容交付，你只需负责省心拿结果。" delay={0.2} />
+          <ModuleCard number="04" icon={Zap} title="迷失型转型者" description="助力解决：账号没活力。深度激活定位跑偏老号，找回账号商业生命力。" delay={0.3} />
         </div>
         
         <div className="relative h-[220px] flex items-center justify-center mt-10 md:-mt-10 lg:mt-0">
