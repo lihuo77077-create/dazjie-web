@@ -20,7 +20,7 @@ const LandingPage = () => (
     <div className="bg-texture" />
 
     {/* Section 1: Geometric Balance Integrated Layout */}
-    <section className="relative z-10 min-h-screen grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-10 lg:gap-[40px] px-8 lg:px-[60px] py-[60px] items-center max-w-[1440px] mx-auto overflow-visible">
+    <section className="relative z-10 min-h-screen grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-12 lg:gap-[40px] px-6 lg:px-[60px] py-[80px] lg:py-[60px] items-center max-w-[1440px] mx-auto overflow-visible">
       {/* Integrated Navigation in Section 1 */}
       <div className="absolute top-12 left-0 w-full px-8 lg:px-[60px] flex justify-between items-center pointer-events-auto pr-16 lg:pr-[100px]">
         <div className="flex flex-col">
@@ -99,8 +99,8 @@ const LandingPage = () => (
       </div>
 
       {/* Right Side: Grid & Stack */}
-      <div className="relative flex flex-col gap-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 relative z-10">
+      <div className="relative flex flex-col gap-12 md:gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-5 relative z-10">
           <ModuleCard number="01" icon={UserRoundCheck} title="实体老板/小白" description="从零到一建立短视频思维，摆脱局外人身份。" />
           <ModuleCard number="02" icon={Workflow} title="瓶颈期创作者" description="解决流量玄学、涨粉不现问题，打通变现路径。" delay={0.1} />
           <ModuleCard number="03" icon={BarChart3} title="甩手掌柜型" description="由于没时间拍或没团队，提供全托管式内容交付。" delay={0.2} />
@@ -138,7 +138,7 @@ const LandingPage = () => (
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 relative group">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-5 relative group">
           <ModuleCard number="01" icon={Workflow} title="深度定位" description="彻底打通账号逻辑，解决起号没方向的迷茫。" />
           <ModuleCard number="02" icon={Rocket} title="高效交付" description="标准化流程，让短视频生产从重资产变轻资产。" delay={0.1} />
           <ModuleCard number="03" icon={Users} title="实战陪跑" description="不讲废话，只讲怎么拿走结果，拿走爆款。" delay={0.2} />
@@ -164,7 +164,7 @@ const LandingPage = () => (
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-24">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10 mb-24">
         <ModuleCard number="01" icon={ShieldCheck} title="深度定位诊断" description="账号诊断+1V1策略沟通，彻底分析提出目前卡点。" className="bg-white border-zinc-100" />
         <ModuleCard number="02" icon={Rocket} title="爆款内容赋能" description="套餐一：纯文案输出，解决内容卡壳，分析账号问题。" delay={0.1} className="bg-zinc-50 border-zinc-200" />
         <ModuleCard number="03" icon={Workflow} title="全案深度陪跑" description="套餐二：文案策划+后期剪辑，系统解决您的运营疑虑。" delay={0.2} className="bg-white border-zinc-100" />
